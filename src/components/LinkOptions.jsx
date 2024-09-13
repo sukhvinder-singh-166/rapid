@@ -1,4 +1,5 @@
 import React from "react";
+import { ArrowRightIcon } from "./common/Icons";
 
 const LinkOptions = ({ options, OptionClickHandler }) => {
   return (
@@ -8,9 +9,9 @@ const LinkOptions = ({ options, OptionClickHandler }) => {
           <button
             key={index}
             onClick={OptionClickHandler}
-            className="text-white text-sm text-nowrap hover:text-blue transition-all duration-500 uppercase z-10"
+            className="text-white text-sm text-nowrap w-full hover:text-blue transition-all duration-500 uppercase z-10 flex gap-2 items-center justify-between"
           >
-            {option.name}
+            {option.name} <span className="-rotate-90"><ArrowRightIcon /></span>
           </button>
           {index !== options.length - 1 && (
             <div className="h-[1px] w-full bg-white"></div>

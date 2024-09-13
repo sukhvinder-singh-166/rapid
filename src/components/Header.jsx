@@ -5,7 +5,7 @@ import { NAV_LINKS, PHONE_NUMBERS, SOCIAL_LINKS } from "./common/Helper";
 import LinkNav from "./common/LinkNav";
 const Header = () => {
   return (
-    <div className="bg-blue">
+    <div className="bg-blue sticky top-0 z-50">
       <div className="container">
         <div className="flex justify-between items-center py-3">
           <div className="flex items-center gap-4">
