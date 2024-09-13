@@ -3,13 +3,13 @@ import ServicesSidebar from "./ServicesSidebar";
 import BlueButton from "../common/BlueButton";
 const Hero = () => {
   return (
-    <div className="w-full h-full flex container flex-grow-[1] py-3">
+    <div className="w-full h-full flex flex-wrap container flex-grow-[1] lg:py-3 py-10">
       <ServicesSidebar />
-      <div className="w-[70%] ps-5 pt-10 h-full flex flex-col justify-end">
-        <p className="text-6xl font-bold text-white leading-[110%]">
+      <div className="lg:w-[70%] w-full lg:ps-5 pt-10 h-full flex flex-col justify-end">
+        <p className="lg:text-6xl md:text-5xl text-4xl font-bold text-white leading-[110%]">
           Meet the Strategists
         </p>
-        <p className="text-6xl font-medium text-white mt-2 leading-[110%]">
+        <p className="lg:text-6xl md:text-5xl text-4xl font-medium text-white mt-2 leading-[110%]">
           Fueling Your Business Excellence
         </p>
         <p className=" text-white font-normal italic pt-4">

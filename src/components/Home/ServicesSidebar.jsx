@@ -10,8 +10,8 @@ const ServicesSidebar = () => {
     setShowOptions(!showOptions);
   };
   return (
-    <div className="w-[30%] border-white border-[3px] p-4 h-ful">
-      <p className="text-white text-3xl font-bold text-center mb-10">
+    <div className="lg:w-[30%] w-full border-white border-[3px] p-4 h-full lg:h-auto">
+      <p className="text-white text-3xl font-bold text-center lg:mb-10 md:mb-5 mb-2">
         Our Services
       </p>
       <Faq />
