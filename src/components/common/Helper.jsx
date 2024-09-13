@@ -44,7 +44,7 @@ export const NAV_LINKS = [
     name: "Services",
     options: [
       {
-        name: "MSME",
+        name: "MSME Subsidy",
       },
       {
         name: "CLU/NOC & Approvals",
