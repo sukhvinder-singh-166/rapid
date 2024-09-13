@@ -22,7 +22,7 @@ const PopUp = () => {
         ></div>
       )}
       <div
-        className={`bg-skin z-[61] w-full h-full max-w-[500px] translate-x-[-50%] translate-y-[-50%] start-[50%]  max-h-[500px] rounded-md fixed transition-all duration-300 ${
+        className={`bg-skin z-[61] w-full h-full max-w-[300px] md:max-w-[500px] translate-x-[-50%] translate-y-[-50%] start-[50%] max-h-[400px] md:max-h-[500px] rounded-md fixed transition-all duration-300 ${
           showPopUp ? "top-[50%]" : "top-[-100%]"
         }`}
       >
@@ -33,24 +33,24 @@ const PopUp = () => {
           >
             <PopUpCrossIcon />
           </span>
-          <p className=" text-blue font-semibold text-center text-3xl">
+          <p className=" text-blue font-semibold text-center text-2xl md:text-3xl">
             Rapid Consulting
           </p>
           <form className=" mt-5 gap-5 flex flex-col">
             <input
               type="text"
               placeholder="Enter your name"
-              className="w-full h-10 border border-blue bg-transparent px-2 text-blue focus:outline-none placeholder:text-blue text-xl border-b-2 border-t-0 border-l-0 border-r-0"
+              className="w-full h-10 border border-blue bg-transparent px-2 text-blue focus:outline-none placeholder:text-blue text-lg md:text-xl border-b-2 border-t-0 border-l-0 border-r-0"
             />
             <input
               type="email"
               placeholder="Enter your email"
-              className="w-full h-10 border border-blue bg-transparent px-2 text-blue focus:outline-none placeholder:text-blue text-xl border-b-2 border-t-0 border-l-0 border-r-0"
+              className="w-full h-10 border border-blue bg-transparent px-2 text-blue focus:outline-none placeholder:text-blue text-lg md:text-xl border-b-2 border-t-0 border-l-0 border-r-0"
             />
             <input
               type="number"
               placeholder="Enter your phone number"
-              className="w-full h-10 border border-blue bg-transparent px-2 text-blue focus:outline-none placeholder:text-blue text-xl border-b-2 border-t-0 border-l-0 border-r-0"
+              className="w-full h-10 border border-blue bg-transparent px-2 text-blue focus:outline-none placeholder:text-blue text-lg md:text-xl border-b-2 border-t-0 border-l-0 border-r-0"
             />
             <BlueButton title="Submit" type="blue" onClick={formSubmit} />
           </form>

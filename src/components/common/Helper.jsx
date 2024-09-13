@@ -42,23 +42,39 @@ export const NAV_LINKS = [
   },
   {
     name: "Services",
-    options: [
-      {
-        name: "MSME Subsidy",
-      },
-      {
-        name: "CLU/NOC & Approvals",
-      },
-      {
-        name: "Registration & certification",
-      },
-      {
-        name: "Others Services",
-      },
-    ],
+    // options: [
+    //   {
+    //     name: "MSME Subsidy",
+    //   },
+    //   {
+    //     name: "CLU/NOC & Approvals",
+    //   },
+    //   {
+    //     name: "Registration & certification",
+    //   },
+    //   {
+    //     name: "Others Services",
+    //   },
+    // ],
   },
   {
     name: "About",
     url: "/about-us",
+  },
+];
+
+// SERVICES SIDEBAR OPTIONS
+export const SERVICES_SIDEBAR_OPTIONS = [
+  {
+    name: "MSME Subsidy",
+  },
+  {
+    name: "CLU/NOC & Approvals",
+  },
+  {
+    name: "Registration & certification",
+  },
+  {
+    name: "Others Services",
   },
 ];
