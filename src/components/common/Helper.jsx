@@ -78,3 +78,73 @@ export const SERVICES_SIDEBAR_OPTIONS = [
     name: "Others Services",
   },
 ];
+export const FAQ_LIST = [
+  {
+    title: "MSME Subsidy",
+    description: [
+      {
+        option: "Pradhan Mantri Mudra Yojana",
+        url: "/",
+      },
+      {
+        option: "Prime Minister’s Employment Generation Programme",
+        url: "/",
+      },
+      {
+        option: "Credit Guarantee Trust Fund for Micro & Small Enterprises",
+        url: "/",
+      },
+    ],
+  },
+  {
+    title: "CLU/NOC & Approvals",
+    description: [
+      {
+        option: "Financial managers",
+        url: "/",
+      },
+      {
+        option: "Human resources managers",
+        url: "/",
+      },
+      {
+        option: "Purchasing managers",
+        url: "/",
+      },
+    ],
+  },
+  {
+    title: "Registration & certification",
+    description: [
+      {
+        option: "Agriculture, Food & Natural Resources",
+        url: "/",
+      },
+      {
+        option: "Architecture & Construction",
+        url: "/",
+      },
+      {
+        option: "Arts, A/V Technology & Communication",
+        url: "/",
+      },
+    ],
+  },
+  {
+    title: "Others Services",
+    description: [
+      {
+        option: "Others Services",
+        url: "/",
+      },
+      {
+        option: "Others Services",
+        url: "/",
+      },
+      {
+        option: "Others Services",
+        url: "/",
+      },
+    ],
+  },
+];
