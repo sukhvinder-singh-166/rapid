@@ -11,7 +11,7 @@ const PartnerSlider = ({ ARRAY, className }) => {
     <div
       className={`${className} bg-white flex items-center w-full py-5 max-h-[350px]`}
     >
-      <div className="!max-w-[1920px] container">
+      <div className="!max-w-[1920px] px-0 container">
         <Swiper
           slidesPerView={6}
           className="transition-all duration-300"
