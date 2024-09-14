@@ -54,11 +54,13 @@ const Header = () => {
       <div className="bg-skin h-[2px] w-full relative z-10"></div>
       <div className="container relative z-10">
         <div className="flex justify-between items-center py-5 relative z-10">
-          <img
-            src={logo}
-            alt="logo"
-            className="sm:max-w-[150px] max-w-[140px] md:max-w-[206px] max-h-[45px] md:max-h-[60px] w-full h-full"
-          />
+          <a href="/">
+            <img
+              src={logo}
+              alt="logo"
+              className="sm:max-w-[150px] max-w-[140px] md:max-w-[206px] max-h-[45px] md:max-h-[60px] w-full h-full"
+            />
+          </a>
           <div className="hidden lg:flex items-center gap-10">
             {NAV_LINKS.map((link, index) => (
               <LinkNav key={index} link={link} />
