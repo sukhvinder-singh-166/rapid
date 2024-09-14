@@ -21,7 +21,7 @@ const Potential = () => {
           grabCursor={true}
           a11y={false}
           freeMode={true}
-          speed={11000}
+          speed={5000}
           loop={true}
           autoplay={{
             delay: 0.5,

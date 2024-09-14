@@ -5,6 +5,7 @@ import video from "./assets/videos/hero.webm";
 import Services from "./components/Home/Services";
 import Potential from "./components/Home/Potential";
 import Clients from "./components/Home/Clients";
+import Success from "./components/Home/Success";
 function App() {
   return (
     <>
@@ -24,6 +25,7 @@ function App() {
         <Services />
         <Clients />
         <Potential />
+        <Success />
       </div>
     </>
   );

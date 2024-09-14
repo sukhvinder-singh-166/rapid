@@ -287,3 +287,23 @@ export const POTENTIAL_CARDS = [
     url: "/",
   },
 ];
+export const SUCCESS_DATA = [
+  {
+    title: "Start-UP Registration for State & Centre",
+    description:
+      "Unleash Your Startup's Potential: Seamlessly Registeration for Start-up India and Start-up State",
+    url: "/",
+  },
+  {
+    title: "Start-UP Registration for State & Centre",
+    description:
+      "Unleash Your Startup's Potential: Seamlessly Registeration for Start-up India and Start-up State",
+    url: "/",
+  },
+  {
+    title: "Start-UP Registration for State & Centre",
+    description:
+      "Unleash Your Startup's Potential: Seamlessly Registeration for Start-up India and Start-up State",
+    url: "/",
+  },
+];
