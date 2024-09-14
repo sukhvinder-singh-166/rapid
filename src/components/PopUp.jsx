@@ -78,13 +78,13 @@ const PopUp = () => {
         ></div>
       )}
       <div
-        className={`bg-skin z-[61] w-full h-full max-w-[300px] md:max-w-[500px] translate-x-[-50%] translate-y-[-50%] start-[50%] max-h-[400px] md:max-h-[500px] rounded-md fixed transition-all duration-300 ${
-          showPopUp ? "top-[50%]" : "top-[-100%]"
+        className={`bg-skin z-[61] w-full h-full max-w-[300px] md:max-w-[500px] end-0 md:max-h-[600px] max-h-[400px] rounded-md fixed transition-all duration-300 ${
+          showPopUp ? "top-0" : "top-[-100%]"
         }`}
       >
-        <div className="w-full h-full relative p-5">
+        <div className="w-full h-full relative p-5 !pt-10">
           <span
-            className="absolute top-[-20px] right-[-20px] w-full max-w-10 cursor-pointer"
+            className="absolute top-1 right-1 w-full max-w-10 cursor-pointer"
             onClick={() => setShowPopUp(false)}
           >
             <PopUpCrossIcon />

@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { SERVICES_SIDEBAR_OPTIONS } from "../common/Helper";
-import { ArrowRightIcon } from "../common/Icons";
 import Faq from "./Faq";
 
 const ServicesSidebar = () => {

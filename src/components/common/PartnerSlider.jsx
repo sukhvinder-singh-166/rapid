@@ -62,7 +62,7 @@ const PartnerSlider = () => {
     <div className="bg-white flex items-center w-full max-h-[200px]">
       <div className="!max-w-[1920px] container">
         <Swiper
-          slidesPerView={5}
+          slidesPerView={6}
           className="transition-all duration-300"
           spaceBetween={40}
           grabCursor={true}
@@ -87,7 +87,7 @@ const PartnerSlider = () => {
             },
             // When the window is >= 768px
             768: {
-              slidesPerView: 4,
+              slidesPerView: 5,
               spaceBetween: 30,
             },
             // When the window is >= 1024px

@@ -16,7 +16,7 @@ const Header = () => {
     }
   };
   return (
-    <div className="bg-blue sticky top-0 z-50">
+    <div className="bg-blue fixed w-full top-0 z-50">
       <div className="container relative z-10">
         <div className="flex justify-between items-center py-3">
           <div className="flex items-center gap-4">

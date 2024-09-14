@@ -165,11 +165,103 @@ export const PopUpCrossIcon = () => {
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="m12.002 2.005c5.518 0 9.998 4.48 9.998 9.997 0 5.518-4.48 9.998-9.998 9.998-5.517 0-9.997-4.48-9.997-9.998 0-5.517 4.48-9.997 9.997-9.997zm0 1.5c-4.69 0-8.497 3.807-8.497 8.497s3.807 8.498 8.497 8.498 8.498-3.808 8.498-8.498-3.808-8.497-8.498-8.497zm0 7.425 2.717-2.718c.146-.146.339-.219.531-.219.404 0 .75.325.75.75 0 .193-.073.384-.219.531l-2.717 2.717 2.727 2.728c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.384-.073-.53-.219l-2.729-2.728-2.728 2.728c-.146.146-.338.219-.53.219-.401 0-.751-.323-.751-.75 0-.192.073-.384.22-.531l2.728-2.728-2.722-2.722c-.146-.147-.219-.338-.219-.531 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"
-        fillRule="nonzero"
-        fill="white"
-      />
+      <path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z" fill="white" />
+    </svg>
+  );
+};
+export const FaqDotIcon = () => {
+  return (
+    <svg
+      width="16"
+      height="17"
+      viewBox="0 0 16 17"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle opacity="0.2" cx="8" cy="8.65845" r="8" fill="white" />
+      <circle cx="8" cy="8.65845" r="5.5" fill="white" />
+      <defs>
+        <linearGradient
+          id="white"
+          x1="8"
+          y1="0.658447"
+          x2="8"
+          y2="16.6584"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#545454" />
+          <stop offset="1" stopColor="#202020" />
+        </linearGradient>
+        <linearGradient
+          id="paint1_linear_201_300"
+          x1="8"
+          y1="3.15845"
+          x2="8"
+          y2="14.1584"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#545454" />
+          <stop offset="1" stopColor="#202020" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+};
+export const FaqArrow = ({ isActive }) => {
+  return (
+    <svg
+      width="16"
+      height="23"
+      viewBox="0 0 16 23"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={`h-4 w-4 sm:h-6 sm:w-6 ${
+        isActive ? "transform rotate-90" : ""
+      }`}
+    >
+      <g filter="url(#filter0_d_168_97)">
+        <path
+          d="M8.57052 10.4403L1.24385 3.11366L3.33676 1.02075L12.7563 10.4403L3.33676 19.8599L1.24385 17.767L8.57052 10.4403Z"
+          fill="white"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_d_168_97"
+          x="0.243896"
+          y="0.020752"
+          width="15.5125"
+          height="22.8391"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset dx="1" dy="1" />
+          <feGaussianBlur stdDeviation="1" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_168_97"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow_168_97"
+            result="shape"
+          />
+        </filter>
+      </defs>
     </svg>
   );
 };

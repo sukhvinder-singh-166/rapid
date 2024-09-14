@@ -1,4 +1,11 @@
-import { EMAIL_TO, FACEBOOK_URL, INSTAGRAM_URL, LINKEDIN_URL, NUMBER_1, YOUTUBE_URL } from "../../utils/constant";
+import {
+  EMAIL_TO,
+  FACEBOOK_URL,
+  INSTAGRAM_URL,
+  LINKEDIN_URL,
+  NUMBER_1,
+  YOUTUBE_URL,
+} from "../../utils/constant";
 import {
   EmailIcon,
   FacebookIcon,
