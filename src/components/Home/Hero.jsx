@@ -2,6 +2,7 @@ import React from "react";
 import BlueButton from "../common/BlueButton";
 import { EMAIL_TO } from "../../utils/constant";
 import PartnerSlider from "../common/PartnerSlider";
+import { PARTNERS } from "../common/Helper";
 const Hero = () => {
   return (
     <>
@@ -18,7 +19,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <PartnerSlider />
+      <PartnerSlider ARRAY={PARTNERS} />
     </>
   );
 };

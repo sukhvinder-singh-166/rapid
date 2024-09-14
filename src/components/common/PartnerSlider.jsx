@@ -4,62 +4,13 @@ import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import SwiperCore from "swiper";
 
-const PartnerSlider = () => {
+const PartnerSlider = ({ ARRAY, className }) => {
   SwiperCore.use([Autoplay]);
-  const PARTNERS = [
-    {
-      image:
-        "https://cdn.prod.website-files.com/65adf633c21f42172846b2bf/65be30f1f4d75747598728b2_4.png",
-      name: "HDFC",
-    },
-    {
-      image:
-        "https://cdn.prod.website-files.com/65adf633c21f42172846b2bf/65be3108723a4b7094e40565_3.png",
-      name: "AXIS",
-    },
-    {
-      image:
-        "https://cdn.prod.website-files.com/65adf633c21f42172846b2bf/65be3108b7940f23e554c8cf_5.png",
-      name: "BANK OF INDIA",
-    },
-    {
-      image:
-        "https://cdn.prod.website-files.com/65adf633c21f42172846b2bf/65be3127a9d744382c197f40_2.png",
-      name: "KOTAK",
-    },
-    {
-      image:
-        "https://cdn.prod.website-files.com/65adf633c21f42172846b2bf/65be3127434c0bd6b0e7f9fa_1.png",
-      name: "PUNJAB NATIONAL",
-    },
-    {
-      image:
-        "https://cdn.prod.website-files.com/65adf633c21f42172846b2bf/65be30f1f4d75747598728b2_4.png",
-      name: "HDFC",
-    },
-    {
-      image:
-        "https://cdn.prod.website-files.com/65adf633c21f42172846b2bf/65be3108723a4b7094e40565_3.png",
-      name: "AXIS",
-    },
-    {
-      image:
-        "https://cdn.prod.website-files.com/65adf633c21f42172846b2bf/65be3108b7940f23e554c8cf_5.png",
-      name: "BANK OF INDIA",
-    },
-    {
-      image:
-        "https://cdn.prod.website-files.com/65adf633c21f42172846b2bf/65be3127a9d744382c197f40_2.png",
-      name: "KOTAK",
-    },
-    {
-      image:
-        "https://cdn.prod.website-files.com/65adf633c21f42172846b2bf/65be3127434c0bd6b0e7f9fa_1.png",
-      name: "PUNJAB NATIONAL",
-    },
-  ];
+
   return (
-    <div className="bg-white flex items-center w-full py-5 max-h-[350px]">
+    <div
+      className={`${className} bg-white flex items-center w-full py-5 max-h-[350px]`}
+    >
       <div className="!max-w-[1920px] container">
         <Swiper
           slidesPerView={6}
@@ -93,7 +44,7 @@ const PartnerSlider = () => {
             // When the window is >= 1024px
           }}
         >
-          {PARTNERS.map((partner, index) => (
+          {ARRAY.map((partner, index) => (
             <SwiperSlide key={index}>
               <img
                 className={`max-h-[180px] object-contain ${
