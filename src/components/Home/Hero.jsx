@@ -15,7 +15,7 @@ const Hero = () => {
         <p className=" text-white font-normal italic pt-4">
           Advancing Businesses with Precision
         </p>
-        <div className=" flex items-center justify-between pt-10">
+        <div className=" flex items-center justify-between md:pt-10 pt-5">
           <BlueButton title={"Explore"} />
         </div>
       </div>

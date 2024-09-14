@@ -2,19 +2,50 @@ import React, { useEffect, useState } from "react";
 import { PopUpCrossIcon } from "./common/Icons";
 import BlueButton from "./common/BlueButton";
 import { SOCIAL_LINKS } from "./common/Helper";
-
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const PopUp = () => {
   const [showPopUp, setShowPopUp] = useState(false);
+  const [contactDetails, setContactDetails] = useState({
+    name: "",
+    email: "",
+    phone: "",
+  });
   useEffect(() => {
     setTimeout(() => {
       setShowPopUp(true);
+      if (showPopUp) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "auto";
+      }
     }, 1000);
   }, []);
   const formSubmit = (e) => {
     e.preventDefault();
+    if (
+      contactDetails.name !== "" &&
+      contactDetails.email !== "" &&
+      contactDetails.phone !== ""
+    ) {
+      toast.success("Form submitted successfully");
+    } else {
+      toast.error("Please fill all the fields");
+    }
+    setContactDetails({
+      name: "",
+      email: "",
+      phone: "",
+    });
   };
   return (
     <>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={1000}
+        closeOnClick={false}
+        className="!right-0 bottom-0 w-full max-w-[300px] md:max-w-[500px]"
+      />
       {showPopUp && (
         <div
           className="w-full h-full fixed top-0 left-0 z-[60]"
@@ -39,16 +70,28 @@ const PopUp = () => {
           <form className=" mt-5 gap-5 flex flex-col">
             <input
               type="text"
+              value={contactDetails.name}
+              onChange={(e) =>
+                setContactDetails({ ...contactDetails, name: e.target.value })
+              }
               placeholder="Enter your name"
               className="w-full h-10 border border-blue bg-transparent px-2 text-blue focus:outline-none placeholder:text-blue text-lg md:text-xl border-b-2 border-t-0 border-l-0 border-r-0"
             />
             <input
               type="email"
+              value={contactDetails.email}
+              onChange={(e) =>
+                setContactDetails({ ...contactDetails, email: e.target.value })
+              }
               placeholder="Enter your email"
               className="w-full h-10 border border-blue bg-transparent px-2 text-blue focus:outline-none placeholder:text-blue text-lg md:text-xl border-b-2 border-t-0 border-l-0 border-r-0"
             />
             <input
               type="number"
+              value={contactDetails.phone}
+              onChange={(e) =>
+                setContactDetails({ ...contactDetails, phone: e.target.value })
+              }
               placeholder="Enter your phone number"
               className="w-full h-10 border border-blue bg-transparent px-2 text-blue focus:outline-none placeholder:text-blue text-lg md:text-xl border-b-2 border-t-0 border-l-0 border-r-0"
             />

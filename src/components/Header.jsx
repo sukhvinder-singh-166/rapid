@@ -7,6 +7,14 @@ import BlueButton from "./common/BlueButton";
 import MobileHeader from "./MobileHeader";
 const Header = () => {
   const [showNav, setShowNav] = useState(false);
+  const NAV_HANDLER = () => {
+    setShowNav(!showNav);
+    if (showNav === true) {
+      document.body.style.overflow = "auto";
+    } else {
+      document.body.style.overflow = "hidden";
+    }
+  };
   return (
     <div className="bg-blue sticky top-0 z-50">
       <div className="container relative z-10">
@@ -62,7 +70,7 @@ const Header = () => {
             </div>
             <div
               className="rotate-90 lg:hidden w-full md:min-w-[60px] min-w-10"
-              onClick={() => setShowNav(!showNav)}
+              onClick={NAV_HANDLER}
             >
               {showNav ? <CrossIcon /> : <NavigationLine />}
             </div>
