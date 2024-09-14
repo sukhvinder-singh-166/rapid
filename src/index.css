@@ -11,3 +11,7 @@
     @apply !hidden;
   }
 }
+@font-face {
+  font-family: "soehne";
+  src: url("./assets/fonts/soehne.woff2");
+}

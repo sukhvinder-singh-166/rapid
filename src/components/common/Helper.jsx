@@ -1,3 +1,4 @@
+import { EMAIL_TO, FACEBOOK_URL, INSTAGRAM_URL, LINKEDIN_URL, NUMBER_1, YOUTUBE_URL } from "../../utils/constant";
 import {
   EmailIcon,
   FacebookIcon,
@@ -6,28 +7,28 @@ import {
   YoutubeIcon,
 } from "./Icons";
 // mobile numbers
-export const PHONE_NUMBERS = ["+91 94672 48028", "+91 94672 48028"];
+export const PHONE_NUMBERS = [NUMBER_1, NUMBER_1];
 // social links
 export const SOCIAL_LINKS = [
   {
     icon: <EmailIcon />,
-    url: "mailto:info@rapidconsulting.in",
+    url: EMAIL_TO,
   },
   {
     icon: <FacebookIcon />,
-    url: "https://www.facebook.com/rapidconsultingindia/",
+    url: FACEBOOK_URL,
   },
   {
     icon: <YoutubeIcon />,
-    url: "https://www.youtube.com/@rapidconsultingindia",
+    url: YOUTUBE_URL,
   },
   {
     icon: <InstagramIcon />,
-    url: "https://www.instagram.com/rapidconsulting",
+    url: INSTAGRAM_URL,
   },
   {
     icon: <LinkedinIcon />,
-    url: "https://www.linkedin.com/company/rapidconsultingindia/",
+    url: LINKEDIN_URL,
   },
 ];
 // nav links

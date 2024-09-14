@@ -1,25 +1,25 @@
 import React from "react";
-import ServicesSidebar from "./ServicesSidebar";
 import BlueButton from "../common/BlueButton";
+import { EMAIL_TO } from "../../utils/constant";
+import PartnerSlider from "../common/PartnerSlider";
 const Hero = () => {
   return (
-    <div className="w-full h-full flex flex-wrap container flex-grow-[1] lg:py-3 py-10">
-      <ServicesSidebar />
-      <div className="lg:w-[70%] w-full lg:ps-5 pt-10 h-full flex flex-col justify-end">
-        <p className="lg:text-6xl md:text-5xl text-4xl font-bold text-white leading-[110%]">
-          Meet the Strategists
-        </p>
-        <p className="lg:text-6xl md:text-5xl text-4xl font-medium text-white mt-2 leading-[110%]">
-          Fueling Your Business Excellence
-        </p>
-        <p className=" text-white font-normal italic pt-4">
-          Advancing Businesses with Precision
-        </p>
-        <div className=" flex items-center justify-between md:pt-10 pt-5">
-          <BlueButton title={"Explore"} />
+    <>
+      <div className="w-full h-full flex flex-wrap container flex-grow-[1] lg:py-3 py-10 items-center">
+        <div className="w-full lg:ps-5 pt-10 h-full flex flex-col justify-end items-center mx-auto text-center">
+          <p className="lg:text-custom-12xl md:text-custom-8xl text-custom-4xl font-soehne font-bold text-white leading-[110%]">
+            Meet the Strategists Fueling Your Business Excellence
+          </p>
+          <p className=" text-white lg:text-custom-4xl md:text-custom-3xl text-2xl font-normal italic pt-4">
+            Advancing Businesses with Precision
+          </p>
+          <div className=" flex items-center justify-between md:pt-8 pt-5">
+            <BlueButton title={"Contact Us"} url={EMAIL_TO} />
+          </div>
         </div>
       </div>
-    </div>
+      <PartnerSlider />
+    </>
   );
 };
 

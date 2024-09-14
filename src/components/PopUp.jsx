@@ -4,6 +4,7 @@ import BlueButton from "./common/BlueButton";
 import { SOCIAL_LINKS } from "./common/Helper";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import emailjs from "@emailjs/browser";
 const PopUp = () => {
   const [showPopUp, setShowPopUp] = useState(false);
   const [contactDetails, setContactDetails] = useState({
@@ -23,20 +24,44 @@ const PopUp = () => {
   }, []);
   const formSubmit = (e) => {
     e.preventDefault();
+
     if (
       contactDetails.name !== "" &&
       contactDetails.email !== "" &&
       contactDetails.phone !== ""
     ) {
-      toast.success("Form submitted successfully");
+      // EmailJS parameters
+      const templateParams = {
+        from_name: contactDetails.name,
+        from_email: contactDetails.email,
+        phone: contactDetails.phone,
+      };
+
+      // Send email using EmailJS
+      emailjs
+        .send(
+          "service_rhvi6ne", // Replace with your EmailJS Service ID
+          "template_58ki8ys", // Replace with your EmailJS Template ID
+          templateParams,
+          "VdFIJa-Q4kIcZzKM7" // Replace with your EmailJS User ID
+        )
+        .then(
+          (result) => {
+            toast.success("Form submitted and email sent successfully");
+          },
+          (error) => {
+            toast.error("Failed to send the email");
+          }
+        );
+
+      setContactDetails({
+        name: "",
+        email: "",
+        phone: "",
+      });
     } else {
       toast.error("Please fill all the fields");
     }
-    setContactDetails({
-      name: "",
-      email: "",
-      phone: "",
-    });
   };
   return (
     <>

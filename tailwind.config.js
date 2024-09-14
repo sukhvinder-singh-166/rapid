@@ -19,9 +19,17 @@ module.exports = {
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
+        soehne: ["soehne", "sans-serif"],
       },
       fontSize: {
-        xsm: "10px",
+        xxs: "12px",
+        xm: "13px",
+        xs: "15px",
+        "2xs": "24px",
+        "custom-3xl": "30px",
+        "custom-4xl": "40px",
+        "custom-8xl": "80px",
+        "custom-12xl": "120px",
       },
     },
   },
