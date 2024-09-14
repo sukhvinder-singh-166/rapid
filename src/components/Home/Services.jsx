@@ -30,7 +30,7 @@ const Services = () => {
   }, [activeIndex]);
   return (
     <div className="overflow-hidden py-16 sm:py-20 lg:py-[128px] bg-blue mt-[-1px] relative">
-      <p className="lg:text-custom-12xl md:text-custom-8xl text-5xl relative z-[5] font-soehne font-bold text-white leading-[110%] text-center">
+      <p className="lg:text-custom-12xl md:text-custom-8xl text-5xl relative z-[5] font-soehne font-bold text-skin leading-[110%] text-center">
         Services
       </p>
       <div className="container max-w-[1180px]">

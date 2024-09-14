@@ -29,7 +29,7 @@ const Header = () => {
                   <a
                     key={index}
                     href={`tel:${number}`}
-                    className="text-white text-sm md:text-base font-bold hover:text-skin transition-all duration-300"
+                    className="text-skin text-sm md:text-base font-bold hover:text-white transition-all duration-300"
                   >
                     {number}
                   </a>
@@ -43,7 +43,7 @@ const Header = () => {
                 key={index}
                 href={link.url}
                 target="_blank"
-                className="text-white text-base font-bold hover:text-skin transition-all duration-300 group"
+                className="text-skin text-base font-bold hover:text-white transition-all duration-300 group"
               >
                 {link.icon}
               </a>

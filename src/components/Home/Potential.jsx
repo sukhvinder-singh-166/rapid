@@ -11,7 +11,7 @@ const Potential = () => {
   return (
     <div className="bg-blue pb-10 pt-20">
       <div className="container">
-        <p className="md:text-custom-8xl text-custom-4xl font-soehne font-bold text-white leading-[110%] text-center sm:mb-10 mb-5">
+        <p className="md:text-custom-8xl text-custom-4xl font-soehne font-bold text-skin leading-[110%] text-center sm:mb-10 mb-5">
           Unlock your full potential
         </p>
 

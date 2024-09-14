@@ -24,7 +24,7 @@ const LinkNav = ({ link, index }) => {
         <a
           key={index}
           href={link.url}
-          className={`text-sm uppercase md:text-2xl lg:text-base font-bold text-white before:absolute before:-bottom-2 before:start-[50%] hover:before:start-0 hover:before:w-full before:w-0 before:h-[2px] before:bg-white transition-all duration-500 before:transition-all before:ease-in-out before:duration-300 flex gap-2 items-center relative group ${
+          className={`text-sm uppercase md:text-2xl lg:text-base font-bold text-skin before:absolute before:-bottom-2 before:start-[50%] hover:before:start-0 hover:before:w-full before:w-0 before:h-[2px] before:bg-skin transition-all duration-500 before:transition-all before:ease-in-out before:duration-300 flex gap-2 items-center relative group ${
             pathname === link.url && "before:!w-full before:!start-0"
           }`}
           onClick={() => setShowOptions(false)}
@@ -34,7 +34,7 @@ const LinkNav = ({ link, index }) => {
       ) : (
         <button
           key={index}
-          className="text-sm uppercase md:text-2xl lg:text-base font-bold text-white before:absolute before:-bottom-2 before:start-[50%] hover:before:start-0 hover:before:w-full before:w-0 before:h-[2px] before:bg-white transition-all duration-500 before:transition-all before:ease-in-out before:duration-300 flex gap-2 items-center relative group"
+          className="text-sm uppercase md:text-2xl lg:text-base font-bold text-skin before:absolute before:-bottom-2 before:start-[50%] hover:before:start-0 hover:before:w-full before:w-0 before:h-[2px] before:bg-skin transition-all duration-500 before:transition-all before:ease-in-out before:duration-300 flex gap-2 items-center relative group"
           onClick={OptionClickHandler}
         >
           {link.name}
