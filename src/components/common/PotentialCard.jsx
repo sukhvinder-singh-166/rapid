@@ -1,9 +1,13 @@
 import React from "react";
-
 const PotentialCard = ({ image, title, description, url, className }) => {
   return (
-    <div className={`${className} pt-10 pb-[35px] md:pb-[46px] lg:pb-10`}>
-      <a href={url} className="border block border-black-light group rounded-xl overflow-hidden hover:shadow-latest-shadow transition-all ease-in-out duration-300">
+    <div
+      className={`${className} pt-10 pb-[35px] md:pb-[46px] lg:pb-10`}
+    >
+      <a
+        href={url}
+        className="border block border-black-light group rounded-xl overflow-hidden hover:shadow-latest-shadow transition-all ease-in-out duration-300"
+      >
         {/* image */}
         <img
           src={image}

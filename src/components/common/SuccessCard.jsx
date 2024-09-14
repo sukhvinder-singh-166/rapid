@@ -14,7 +14,7 @@ const SuccessCard = ({title, description, url}) => {
         <p className="lg:text-xl text-base font-bold text-blue">
           {description}
         </p>
-        <BlueButton title={"Read More"} url={url} type="blue" />
+        <BlueButton title={"Read More"} type="blue" />
       </div>
     </a>
   );

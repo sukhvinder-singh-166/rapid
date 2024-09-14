@@ -15,3 +15,8 @@
   font-family: "soehne";
   src: url("./assets/fonts/soehne.woff2");
 }
+.bg-layer {
+  background-image: url("./assets/images/svg/design-layer.svg");
+  background-size: cover;
+  background-position: center;
+}
