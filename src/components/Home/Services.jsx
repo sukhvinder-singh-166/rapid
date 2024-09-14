@@ -31,11 +31,11 @@ const Services = () => {
   return (
     <div className="overflow-hidden py-16 sm:py-20 lg:py-[128px] bg-blue mt-[-1px] relative">
       <p className="lg:text-custom-12xl md:text-custom-8xl text-custom-4xl font-soehne font-bold text-white leading-[110%] text-center sm:mb-10 mb-5">
-        Our Services
+        Our Financial Partners
       </p>
       <div className="container max-w-[1180px]">
         <div className="flex justify-between flex-col-reverse lg:flex-row sm:pt-10 pt-5 lg:pt-20">
-          <div className="lg:w-[42%] pt-6 md:pt-10 lg:pt-0 relative z-10">
+          <div className="lg:w-[42%] pt-6 md:pt-10 lg:pt-0 relative">
             {FAQ_LIST.map((obj, index) => (
               <div
                 key={index}
@@ -43,7 +43,7 @@ const Services = () => {
                 className="overflow-hidden transition-all duration-300 py-[22px] rounded-[10px] mt-4 border border-white bg-skin"
               >
                 <button className="w-full text-left px-4 focus:outline-none transition duration-300 ease-in-out flex justify-between items-center">
-                  <span className="text-2xl font-bold text-white ff_orbitron">
+                  <span className="text-xl md:text-2xl font-bold text-white ff_orbitron">
                     {obj.title}
                   </span>
                   <FaqArrow isActive={activeIndex === index} />
@@ -61,7 +61,7 @@ const Services = () => {
                     <a
                       href={item.url}
                       key={index}
-                      className={`text-2xl text-white pt-5 hover:text-blue transition-all duration-300 leading-[31px] flex ${
+                      className={`text-xl md:text-2xl text-white pt-5 hover:text-blue transition-all duration-300 leading-[31px] flex ${
                         index === activeIndex ? " opacity-100 mb-0" : ""
                       } transition-all duration-700`}
                     >

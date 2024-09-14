@@ -59,7 +59,7 @@ const PartnerSlider = () => {
     },
   ];
   return (
-    <div className="bg-white flex items-center w-full max-h-[200px]">
+    <div className="bg-white flex items-center w-full py-5 max-h-[350px]">
       <div className="!max-w-[1920px] container">
         <Swiper
           slidesPerView={6}
