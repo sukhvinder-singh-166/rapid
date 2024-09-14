@@ -1,12 +1,13 @@
 import React from "react";
 import BlueButton from "../common/BlueButton";
 import { EMAIL_TO } from "../../utils/constant";
+import ServicesDropdown from "./ServicesDropdown";
 import PartnerSlider from "../common/PartnerSlider";
 import { PARTNERS } from "../common/Helper";
 const Hero = () => {
   return (
     <>
-      <div className="w-full h-full flex flex-wrap container flex-grow-[1] lg:py-3 md:py-10 py-20 items-center md:mt-[100px] mt-[160px]">
+      <div className="w-full h-full flex flex-wrap container flex-grow-[1] lg:py-3 md:py-10 py-20 items-center md:mt-[100px] md:mb-0 sm:mb-28 mt-[160px]">
         <div className="w-full lg:ps-5 pt-10 h-full flex flex-col justify-end items-center mx-auto text-center">
           <p className="lg:text-custom-12xl md:text-custom-8xl text-custom-4xl font-soehne font-bold text-white leading-[110%]">
             Meet the Strategists Fueling Your Business Excellence
@@ -18,8 +19,8 @@ const Hero = () => {
             <BlueButton title={"Contact Us"} url={EMAIL_TO} />
           </div>
         </div>
+        <ServicesDropdown />
       </div>
-      <PartnerSlider ARRAY={PARTNERS} />
     </>
   );
 };
