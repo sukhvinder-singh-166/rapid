@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <div className="relative">
-        <div className="bg-blue absolute top-0 left-0 w-full h-screen z-[1] opacity-90 pointer-events-none"></div>
+        <div className="bg-blue absolute top-0 left-0 w-full min-h-screen z-[1] opacity-90 pointer-events-none"></div>
         <video
           className="absolute top-0 left-0 w-full h-screen object-cover z-[-1]"
           autoPlay

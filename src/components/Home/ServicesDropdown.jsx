@@ -10,7 +10,7 @@ const ServicesDropdown = () => {
   };
 
   return (
-    <div className="container relative z-10 mb-10 md:mt-0 mt-10">
+    <div className="container relative z-10 mb-10 md:mt-0 mt-10 min-h-[60px]">
       <div className=" flex flex-wrap items-start sm:absolute top-0 left-0">
         {FAQ_LIST.map((obj, index) => (
           <div className="lg:w-3/12 sm:w-6/12 w-full px-2">
